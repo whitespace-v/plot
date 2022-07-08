@@ -1,13 +1,15 @@
 import React from 'react';
-import Layout from "./hoc/Layout";
+import Layout from "./hoc/Layout/Layout";
 import Main from "./components/Main/Main";
+import Header from "./components/Header/Header";
 
 const App = () => {
-  return (
-      <Layout>
-          <Main/>
-      </Layout>
-  );
+    return (
+        <>
+            <Header/>
+            <Main/>
+        </>
+    );
 };
 
 export default App;

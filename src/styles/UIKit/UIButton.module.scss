@@ -1,0 +1,20 @@
+@import '../variables';
+.UIButton{
+  border-radius: 12px;
+  background-color: $c_primary;
+  font-weight: $fw_bold;
+  width: fit-content;
+  font-size: 14px;
+  padding: 18px 32px;
+  color: $c_white;
+  box-shadow: $shadow;
+  cursor: pointer;
+  transition: background-color $transition;
+  text-transform: uppercase;
+  &:hover{
+    background-color: $c_sky;
+  }
+  &:active,&:focus{
+    background-color: $c_deep;
+  }
+}

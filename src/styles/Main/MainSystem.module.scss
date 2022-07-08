@@ -1,0 +1,34 @@
+@import "../variables";
+.MainSystem{
+
+  &__title{
+    font-size: $fz_title;
+    color: $c_deep;
+    text-align: center;
+    font-weight: $fw_bold;
+    margin: 20px auto;
+  }
+  &__subtitle{
+    font-size: $fz_primary;
+    color: $c_deep;
+    text-align: center;
+    width: 1100px;
+    margin: 0 auto;
+  }
+  &__options{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+    margin: 20px 0 100px 0;
+    &-item{
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 500px;
+      height: 338px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}

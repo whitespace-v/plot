@@ -1,9 +1,15 @@
 import React from 'react';
-import Intro from "./parts/Intro";
+import MainIntro from "./MainIntro";
+import MainActions from "./MainActions";
+import MainSystem from "./MainSystem";
 
 const Main = () => {
     return (
-        <Intro/>
+        <>
+            <MainIntro/>
+            <MainActions/>
+            <MainSystem/>
+        </>
     );
 };
 

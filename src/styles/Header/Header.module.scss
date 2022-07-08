@@ -1,0 +1,26 @@
+@import '../variables';
+.Header{
+  font-size: 25px;
+  background-color: $c_rainy;
+  &__nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &-item:first-child{
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      img{
+        width: 50px;
+      }
+    }
+    &-item.active{
+      color: $c_primary;
+    }
+  }
+  &__options{
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+  }
+}
