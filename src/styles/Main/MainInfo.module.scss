@@ -47,6 +47,9 @@
   &__block:nth-child(2){
     .MainInfo__block-text{
       background-color: white;
+      .MainInfo__block-text-content-button{
+        margin-bottom: 40px;
+      }
     }
     .MainInfo__block-image{
       img{

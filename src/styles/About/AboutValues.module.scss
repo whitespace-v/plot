@@ -1,0 +1,50 @@
+@import "../variables";
+.AboutValues{
+  background-color: $c_primary;
+  *{
+    color: white;
+  }
+  &__text{
+    text-align: center;
+    width: 1000px;
+    margin: 0 auto 50px auto;
+    font-size: 32px;
+  }
+  &__subtext{
+    text-align: center;
+    width: 1000px;
+    margin: 0 auto;
+    font-size: 28px;
+  }
+  &__title{
+    text-align: center;
+    width: 1000px;
+    margin: 0 auto 50px auto;
+    font-size: 48px;
+  }
+  &__raw{
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    &-block{
+      display: flex;
+      margin-bottom: 100px;
+      &-number{
+        font-size: 120px;
+        font-weight: bold;
+        color: rgba(234,234,234,0.5);
+        line-height: 120px;
+      }
+      &-text{
+        &-title{
+          font-size: 32px;
+          width: 450px;
+        }
+        &-text{
+          font-size: 18px;
+          width: 450px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+@import "../variables";
+.Footer{
+  padding: 50px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 150px;
+  background-color: $c_rainy;
+  &__contacts{
+    &-mail{
+      margin: 20px 0;
+    }
+    &-media{
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}

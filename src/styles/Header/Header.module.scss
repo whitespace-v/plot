@@ -1,11 +1,14 @@
 @import '../variables';
 .Header{
+  padding-top: 15px;
   font-size: 25px;
-  background-color: $c_rainy;
   &__nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    &>*{
+      font-size: 25px !important;
+    }
     &-item:first-child{
       display: flex;
       align-items: center;
@@ -23,4 +26,10 @@
     justify-content: flex-end;
     gap: 30px;
   }
+}
+.rainy{
+  background-color: $c_rainy;
+}
+.marsh{
+  background-color: $c_marsh;
 }

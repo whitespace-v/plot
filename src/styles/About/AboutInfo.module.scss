@@ -1,0 +1,42 @@
+@import "../variables";
+.AboutInfo{
+  &__marsh{
+    height: 200px;
+    background-color: $c_marsh;
+    width: 99vw;
+  }
+  &__primary{
+    height: 500px;
+    background-color: $c_primary;
+    width: 99vw;
+  }
+  &__plate{
+    position: absolute;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    left: 50%;
+    transform: translate(-50%, 0);
+    margin-top: -700px;
+    &-block{
+      margin-left: 72px;
+      &-title{
+        font-size: 72px;
+        color: $c_primary;
+      }
+      &-text{
+        font-size: 18px;
+        color: $c_primary;
+        width: 700px;
+        margin-bottom: 30px;
+      }
+      &-button{
+        margin: 0 0 60px 80px;
+      }
+    }
+    &-image{
+      padding: 20px;
+    }
+  }
+}

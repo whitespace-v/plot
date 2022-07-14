@@ -1,14 +1,13 @@
 import React from "react";
-import Main from "./components/Main/Main";
-import Header from "./components/Header/Header";
+import {BrowserRouter} from "react-router-dom";
+import AppRouter from "./AppRouter";
 
 const App = () => {
-  return (
-    <>
-      <Header />
-      <Main />
-    </>
-  );
+    return (
+        <BrowserRouter>
+            <AppRouter/>
+        </BrowserRouter>
+    );
 };
 
 export default App;

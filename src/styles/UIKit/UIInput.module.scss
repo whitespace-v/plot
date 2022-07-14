@@ -1,0 +1,24 @@
+@import '../variables';
+.UIInput{
+  outline: none !important;
+  background-color: rgba(0,0,0,0);
+  font-size: 20px;
+  padding: 15px;
+  text-indent: 10px;
+  &.dark{
+    border-radius: 40px;
+  }
+  &.white{
+    border-radius: 12px;
+    background-color: white;
+  }
+  &.white::placeholder, &.dark::placeholder{
+    color: $c_deep;
+  }
+  &.white:active,&.white:focus,&.dark:active,&.dark:focus{
+    border: 2px solid $c_primary;
+  }
+  &:hover{
+    border: 2px solid gray;
+  }
+}
