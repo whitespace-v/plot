@@ -1,0 +1,29 @@
+@import '../variables';
+.MainIntro{
+  background-color: $c_rainy;
+  &__intro{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+    &-naming{
+      font-size: 96px;
+      line-height: 96px;
+      &_fl{
+        color: #3D89CF;
+        font-size: 96px;
+      }
+    }
+    &-picture{ img{} }
+  }
+  &__action{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    p{
+      font-size: $fz_title;
+      padding-bottom: 50px;
+    }
+    padding-bottom: 30px;
+  }
+}

@@ -1,0 +1,38 @@
+@import "../variables";
+.AboutIntro{
+  background-color: $c_marsh;
+  &__content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__block{
+    &-title{
+      font-size: 96px;
+      color: $c_primary;
+      font-weight: bold;
+    }
+    &-text{
+      font-size: 18px;
+      color: $c_primary;
+      width: 560px;
+    }
+    &-button{
+      margin: 50px 0 100px 80px;
+    }
+    &-line{
+      height: 1px;
+      width: 600px;
+      background-color: rgba(151,151,151,0.6);
+    }
+    &-phone{
+      color: $c_primary;
+      font-size: 34px;
+      margin: 40px 0 40px 80px;
+    }
+    .subtext{
+      margin: 20px 0 0 80px;
+      width: 200px;
+    }
+  }
+}

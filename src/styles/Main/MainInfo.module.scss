@@ -1,0 +1,60 @@
+@import '../variables';
+.MainInfo{
+  &__block{
+    display: flex;
+    &-text{
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      color: $c_deep;
+      &-content{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        width: 550px;
+        &-title{
+          font-weight: $fw_bold;
+        }
+      }
+      &-button{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px;
+      }
+    }
+    &-image{
+      img{
+        position: absolute;
+      }
+      .MainInfo__block-image-space{
+        background-color: $c_sky;
+        width: 700px;
+        height: 100%;
+      }
+    }
+  }
+  &__block:nth-child(1){
+    .MainInfo__block-text{
+      background-color: $c_rainy;
+    }
+    .MainInfo__block-image{
+      img{
+        margin: 120px 0 0 50px;
+      }
+    }
+  }
+  &__block:nth-child(2){
+    .MainInfo__block-text{
+      background-color: white;
+      .MainInfo__block-text-content-button{
+        margin-bottom: 40px;
+      }
+    }
+    .MainInfo__block-image{
+      img{
+        margin: 50px 0 0 -50px;
+      }
+    }
+  }
+}

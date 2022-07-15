@@ -1,0 +1,41 @@
+@import '../variables';
+.UIText{
+  cursor: pointer;
+  font-size: 16px;
+  a{
+    text-decoration: none;
+  }
+}
+.dark{
+  color: $c_deep;
+  &:hover{
+    color: $c_primary;
+  }
+}
+.white{
+  color: $c_primary;
+  &:hover{
+    color: gray;
+  }
+}
+.dark{
+  a{
+    color: $c_deep;
+  }
+  &:hover{
+    a{
+      color: $c_primary;
+    }
+
+  }
+}
+.white{
+  a{
+    color: $c_primary;
+  }
+  &:hover{
+    a{
+      color: gray;
+    }
+  }
+}
