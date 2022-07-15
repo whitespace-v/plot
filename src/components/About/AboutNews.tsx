@@ -6,9 +6,9 @@ import UIText from "../../hoc/UIKit/UIText";
 import item0 from '../../assets/static/about/news_item0.png'
 import item1 from '../../assets/static/about/news_item1.png'
 import item2 from '../../assets/static/about/news_item2.png'
+import { Autoplay } from "swiper";
 
 const AboutNews = () => {
-
     return (
         <div className={classes['AboutNews']}>
             <p className={classes['AboutNews__title']}>
@@ -16,7 +16,12 @@ const AboutNews = () => {
             </p>
             <div className={classes['AboutNews__slider']}>
                 <Swiper
-                    spaceBetween={0} slidesPerView={3} loop autoplay
+                    spaceBetween={0} slidesPerView={3} loop
+                    autoplay={{
+                        delay: 2500,
+                        disableOnInteraction: true,
+                    }}
+                    modules={[Autoplay]}
                     className={classes['AboutNews__slider-container']}
                 >
                     <SwiperSlide className={classes['slide']}>
