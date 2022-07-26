@@ -1,10 +1,11 @@
 @import '../variables';
 .MainIntro{
   background-color: $c_rainy;
+  padding-top: 50px;
   &__intro{
     display: flex;
     justify-content: space-between;
-    padding: 50px 0;
+    flex-wrap: wrap;
     &-naming{
       font-size: 96px;
       line-height: 96px;
@@ -13,17 +14,49 @@
         font-size: 96px;
       }
     }
-    &-picture{ img{} }
   }
   &__action{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 50px auto;
     p{
       font-size: $fz_title;
       padding-bottom: 50px;
     }
     padding-bottom: 30px;
+  }
+}
+@media (max-width: 1600px) {
+  .MainIntro{
+    padding-top: 150px;
+    &__intro{
+      justify-content: center;
+      flex-direction: column;
+      //align-items: center;
+      flex-wrap: wrap;
+      height: 480px;
+      &-naming{
+        order: 1;
+        font-size: 40px;
+        line-height: 40px;
+        &_fl{
+          font-size: 40px;
+        }
+      }
+      &-picture{
+        order: 3;
+      }
+    }
+    &__action{
+      order: 2;
+      display: unset;
+      margin: 50px 0 0 0;
+      p{
+        width: 270px;
+        font-size: 18px;
+      }
+    }
   }
 }

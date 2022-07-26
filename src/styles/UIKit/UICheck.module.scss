@@ -1,0 +1,24 @@
+.UICheck{
+  min-width: 40px;
+  min-height: 40px;
+  max-width: 40px;
+  max-height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 4px solid #C3CBCD;
+  background-color: white;
+  margin-right: 10px;
+  &__checker{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    svg{
+      fill: white;
+    }
+  }
+}
+.touched{
+  background-color: #3C64B1;
+  border: none;
+}

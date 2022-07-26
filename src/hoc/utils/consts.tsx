@@ -10,3 +10,4 @@ export const LOGIN_ROUTE = '/login'
 export const SIGNUP_ROUTE = '/signup'
 //ERROR URL PATHS
 export const ERROR_NOTFOUND_ROUTE = '/404'
+export const ERROR_NOT_YET_ROUTE = '/not_yet'

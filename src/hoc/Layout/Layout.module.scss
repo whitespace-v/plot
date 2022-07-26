@@ -13,3 +13,9 @@
 html{
   scroll-behavior: smooth;
 }
+@media (max-width: 1599px) {
+  .Layout{
+    margin: 0 auto;
+    max-width: 800px;
+  }
+}

@@ -1,6 +1,6 @@
 import React from 'react';
 import classes from '../../styles/NotFound/NotFound.module.scss'
-import image from '../../assets/static/helpers/error.png'
+import image from '../../assets/static/helpers/not_found.png'
 import Layout from "../../hoc/Layout/Layout";
 import UIButton from "../../hoc/UIKit/UIButton";
 import {useNavigate} from "react-router-dom";

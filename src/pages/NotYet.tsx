@@ -1,22 +1,22 @@
 import React, {useEffect} from 'react';
-import NotFoundContent from "../components/NotFound/NotFoundContent";
+import NotYetContent from "../components/NotYet/NotYetContent";
 import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
 
-const NotFound = () => {
+const NotYet = () => {
 
     useEffect(() => {
-        document.title = "ПЛОТ - Не найдено :("
+        document.title = "ПЛОТ - В разработке!"
         window.scroll(0,0)
     }, []);
 
     return (
         <>
             <Header back={"rainy"}/>
-            <NotFoundContent/>
+            <NotYetContent/>
             <Footer/>
         </>
     );
 };
 
-export default NotFound;
+export default NotYet;

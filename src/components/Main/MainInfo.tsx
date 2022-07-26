@@ -3,8 +3,11 @@ import classes from "../../styles/Main/MainInfo.module.scss";
 import img0 from "../../assets/static/main/info0.png";
 import img1 from "../../assets/static/main/info1.png";
 import UIButton from "../../hoc/UIKit/UIButton";
+import {ERROR_NOT_YET_ROUTE} from "../../hoc/utils/consts";
+import {useNavigate} from "react-router-dom";
 
 const MainInfo = () => {
+  const navigate = useNavigate()
   return (
       <div className={classes["MainInfo"]}>
 
@@ -31,7 +34,7 @@ const MainInfo = () => {
                 знаний, которые необходимы для работы в транспортной компании
               </p>
               <div className={classes["MainInfo__block-text-button"]}>
-                <UIButton type="active" onClick={() => {}}>
+                <UIButton type="active" onClick={() => {navigate(ERROR_NOT_YET_ROUTE)}}>
                   Партнёры
                 </UIButton>
               </div>
@@ -55,7 +58,7 @@ const MainInfo = () => {
                 транспортных аспектов как в стране, так и зарубежом.
               </p>
               <div className={classes["MainInfo__block-text-content-button"]}>
-                <UIButton type="active" onClick={() => {}}>
+                <UIButton type="active" onClick={() => {navigate(ERROR_NOT_YET_ROUTE)}}>
                   Партнёры
                 </UIButton>
               </div>

@@ -3,8 +3,11 @@ import classes from '../../styles/About/AboutIntro.module.scss'
 import Layout from "../../hoc/Layout/Layout";
 import image from '../../assets/static/about/intro.png'
 import UIButton from "../../hoc/UIKit/UIButton";
+import {ERROR_NOT_YET_ROUTE} from "../../hoc/utils/consts";
+import {useNavigate} from "react-router-dom";
 
 const AboutIntro = () => {
+    const navigate = useNavigate()
     return (
         <div className={classes['AboutIntro']}>
             <Layout>
@@ -25,7 +28,9 @@ const AboutIntro = () => {
                             разнообразить процесс обучения опираясь на современные стандарты качества.
                         </div>
                         <div className={classes['AboutIntro__block-button']}>
-                            <UIButton type={"active"} onClick={() => {}}>регистрация</UIButton>
+                            <UIButton type={"active"}
+                                      onClick={() => {navigate(ERROR_NOT_YET_ROUTE)}}
+                            >регистрация</UIButton>
                         </div>
                         <div className={classes['AboutIntro__block-line']}/>
                         <div className={classes['AboutIntro__block-text'] + ' ' + classes['subtext']}>
@@ -33,7 +38,7 @@ const AboutIntro = () => {
                             Свяжитесь с нами!
                         </div>
                         <div className={classes['AboutIntro__block-phone']}>
-                            +7924 120-18-15
+                            +7 (924) 120-18-15
                         </div>
                     </div>
                 </div>

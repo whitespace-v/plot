@@ -4,8 +4,11 @@ import classes from '../../styles/Main/MainSystem.module.scss'
 import UIButton from "../../hoc/UIKit/UIButton";
 import item0 from '../../assets/static/main/window0.png'
 import item1 from '../../assets/static/main/window1.png'
+import {ERROR_NOT_YET_ROUTE} from "../../hoc/utils/consts";
+import {useNavigate} from "react-router-dom";
 
 const MainSystem = () => {
+    const navigate = useNavigate()
     return (
         <div className={classes['MainSystem']}>
             <Layout>
@@ -20,7 +23,7 @@ const MainSystem = () => {
                         className={classes['MainSystem__options-item']}
                         style={{backgroundImage: `url(${item0})`}}
                     >
-                        <UIButton onClick={() => {}} type={"disabled"}>
+                        <UIButton onClick={() => {navigate(ERROR_NOT_YET_ROUTE)}} type={"disabled"}>
                             Модули
                         </UIButton>
                     </div>
@@ -28,7 +31,7 @@ const MainSystem = () => {
                         className={classes['MainSystem__options-item']}
                         style={{backgroundImage: `url(${item1})`}}
                     >
-                        <UIButton onClick={() => {}} type={"disabled"}>
+                        <UIButton onClick={() => {navigate(ERROR_NOT_YET_ROUTE)}} type={"disabled"}>
                             Деловые игры
                         </UIButton>
                     </div>

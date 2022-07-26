@@ -1,0 +1,63 @@
+@import '../variables';
+.HeaderBackDrop{
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(255, 255, 255, 0.38);
+  position: fixed;
+  z-index: 1;
+  &__content{
+    position: fixed;
+    background-color: $c_deep;
+    top: 0;
+    right: 0;
+    padding: 20px 100px 20px 20px;
+    height: 100vh;
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    & > *{
+      color: white;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 15px;
+    }
+    &.entering{
+      animation: appearing 0.5s ease-in-out forwards;
+    }
+    &.exiting{
+      animation: appearing 0.5s ease-in-out alternate-reverse;
+    }
+  }
+  &.entering{
+    animation: backdrop 0.5s ease-in-out forwards;
+  }
+  &.exiting{
+    animation: backdrop 0.5s ease-in-out alternate-reverse;
+  }
+}
+@keyframes appearing {
+  0%{
+    opacity: 0;
+    transform: translateX(500px);
+  }
+  50%{
+    opacity: 1;
+  }
+  100%{
+    transform: translateX(0px);
+  }
+}
+@keyframes backdrop {
+  0%{
+    opacity: 0;
+    scale: 0.3;
+  }
+  50%{
+    opacity: 1;
+    scale: 1.2;
+  }
+  100%{
+    scale: 1;
+  }
+}

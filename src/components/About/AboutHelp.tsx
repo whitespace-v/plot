@@ -3,8 +3,11 @@ import Layout from "../../hoc/Layout/Layout";
 import classes from '../../styles/About/AboutHelp.module.scss'
 import UIButton from "../../hoc/UIKit/UIButton";
 import image from '../../assets/logo/logo_huge.png'
+import {ERROR_NOT_YET_ROUTE} from "../../hoc/utils/consts";
+import {useNavigate} from "react-router-dom";
 
 const AboutHelp = () => {
+    const navigate = useNavigate()
     return (
         <div className={classes['AboutHelp']}>
             <Layout>
@@ -25,7 +28,7 @@ const AboutHelp = () => {
                             Мы будем благодарны любой помощи
                         </p>
                         <div className={classes['AboutHelp__block-button']}>
-                            <UIButton onClick={() => {}} type={"active"}>
+                            <UIButton onClick={() => {navigate(ERROR_NOT_YET_ROUTE)}} type={"active"}>
                                 связаться
                             </UIButton>
                         </div>

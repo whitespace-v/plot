@@ -10,7 +10,7 @@ interface IUIText{
 const UIText = (props: IUIText) => {
     const cls = [classes['UIText'], classes[props.type]]
     return (
-        <div className={cls.join(' ')}>
+        <div className={cls.join(' ')} onClick={props.onClick}>
             {props.children}
         </div>
     );

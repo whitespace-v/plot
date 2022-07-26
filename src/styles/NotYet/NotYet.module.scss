@@ -1,0 +1,31 @@
+@import "../variables";
+.NotYet{
+  background-color: $c_rainy;
+
+  &__header, &__subheader{
+    color: #25456C;
+    font-size: 38px;
+    padding-top: 50px;
+  }
+  &__action{
+    display: flex;
+    align-items: center;
+    color: #1D3557;
+    &_content{
+      &-title{
+        margin-bottom: 20px ;
+      }
+      &-check{
+        display: flex;
+        margin: 20px 0;
+        align-items: center;
+        p{
+          font-size: 14px;
+          color: #808080;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+
+}

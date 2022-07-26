@@ -2,8 +2,11 @@ import React from 'react';
 import classes from '../../styles/About/AboutInfo.module.scss'
 import image from '../../assets/static/about/video_thumbnail.png'
 import UIButton from "../../hoc/UIKit/UIButton";
+import {ERROR_NOT_YET_ROUTE} from "../../hoc/utils/consts";
+import {useNavigate} from "react-router-dom";
 
 const AboutInfo = () => {
+    const navigate = useNavigate()
     return (
         <div className={classes['AboutInfo']}>
 
@@ -25,7 +28,7 @@ const AboutInfo = () => {
                         Команда ПЛОТ не действует в одиночку, для работы над содержанием платформы привлекаются крупные транспортно-экспедиторские компании, которые готовы поделиться практическим опытом с будущим поколением транспортных специалистов.
                     </p>
                     <div className={classes['AboutInfo__plate-block-button']}>
-                        <UIButton type={"active"} onClick={() => {}}>Подробнее</UIButton>
+                        <UIButton type={"active"} onClick={() => {navigate(ERROR_NOT_YET_ROUTE)}}>Подробнее</UIButton>
                     </div>
                 </div>
                 <div className={classes['AboutInfo__plate-image']}>
