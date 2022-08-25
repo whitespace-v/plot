@@ -12,6 +12,7 @@ const Main = () => {
     useEffect(() => {
         document.title = "ПЛОТ - Главная"
     }, []);
+
     const {width} = useWindowDimensions()
     return (
         <>

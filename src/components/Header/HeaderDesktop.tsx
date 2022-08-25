@@ -4,7 +4,7 @@ import classes from "../../styles/Header/HeaderDesktop.module.scss";
 import Layout from "../../hoc/Layout/Layout";
 import logo from "../../assets/logo/logo.png";
 import UIText from "../../hoc/UIKit/UIText";
-import {ABOUT_ROUTE, ERROR_NOT_YET_ROUTE, MAIN_ROUTE} from "../../hoc/utils/consts";
+import {ABOUT_ROUTE, DEMO_ROUTE, ERROR_NOT_YET_ROUTE, MAIN_ROUTE} from "../../hoc/utils/consts";
 import UIButton from "../../hoc/UIKit/UIButton";
 
 interface IHeaderDesktop{
@@ -31,7 +31,7 @@ const HeaderDesktop = (props: IHeaderDesktop) => {
                         <Link to={ERROR_NOT_YET_ROUTE}>FAQ</Link>
                     </UIText>
                     <UIText type={window.location.pathname === '' ? 'white' : 'dark'}>
-                        <Link to={ERROR_NOT_YET_ROUTE}>Демо модуль</Link>
+                        <Link to={DEMO_ROUTE}>Демо модуль</Link>
                     </UIText>
                     <UIText type={window.location.pathname === '' ? 'white' : 'dark'}>
                         <Link to={ERROR_NOT_YET_ROUTE}>Партнёры</Link>
