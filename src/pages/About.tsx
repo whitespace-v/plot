@@ -6,8 +6,9 @@ import AboutContent from "../components/About/AboutContent";
 
 const About = () => {
 
-
+    useEffect(() => {
         document.title = "ПЛОТ - О нас"
+    }, [])
 
     return (
         <>

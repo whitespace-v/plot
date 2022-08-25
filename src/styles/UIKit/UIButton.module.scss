@@ -18,3 +18,12 @@
     background-color: $c_deep;
   }
 }
+.green{
+  background-color: $c_green;
+  &:hover{
+    background-color: #059A6D;
+  }
+  &:active,&:focus{
+    background-color: #059A6D;
+  }
+}
